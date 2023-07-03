@@ -12,9 +12,7 @@ function ProjectListScreen() {
     });
     const [list, setList] = useState([]);
     const [users, setUsers] = useState([]);
-
     const debouncedParam = useDebounce(param, 500);
-
     const userInputHandler = (userInput) => {
         setParam({ ...userInput });
     };

@@ -29,7 +29,10 @@
             "react-app",
             "react-app/jest",
             "prettier"
-        ]
+        ],
+        "rules": {
+            "no-console": "warn"
+        }
     },
     "browserslist": {
         "production": [
@@ -52,6 +55,9 @@
         "prettier": "2.8.8"
     },
     "lint-staged": {
-        "*.{js,css,md,ts,tsx}": "prettier --write"
+        "*.{js,jsx,css,md,ts,tsx}": [
+            "eslint --fix",
+            "prettier --write"
+        ]
     }
 }
