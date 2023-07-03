@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import SearchPanel from './search-panel';
 import List from './list';
 import './index.css';
-import { cleanObject, useDebounce, useMount } from 'utils/modle';
+import { cleanObject, useDebounce, useMount } from 'utils/model';
 import * as qs from 'qs';
 const apiUrl = process.env.REACT_APP_API_URL;
 function ProjectListScreen() {
